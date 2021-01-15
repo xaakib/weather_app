@@ -23,14 +23,13 @@ class _WeatherAppState extends State<WeatherApp> {
 
   @override
   Widget build(BuildContext context) {
-
-    if(locationList[_currentPage].weatherType == 'Sunny') {
+    if (locationList[_currentPage].weatherType == 'Sunny') {
       bgImg = 'assets/sunny.jpg';
-    } else if(locationList[_currentPage].weatherType == 'Night') {
+    } else if (locationList[_currentPage].weatherType == 'Night') {
       bgImg = 'assets/night.jpg';
-    } else if(locationList[_currentPage].weatherType == 'Rainy') {
+    } else if (locationList[_currentPage].weatherType == 'Rainy') {
       bgImg = 'assets/rainy.jpg';
-    } else if(locationList[_currentPage].weatherType == 'Cloudy') {
+    } else if (locationList[_currentPage].weatherType == 'Cloudy') {
       bgImg = 'assets/cloudy.jpeg';
     }
 
@@ -79,19 +78,14 @@ class _WeatherAppState extends State<WeatherApp> {
               margin: EdgeInsets.only(top: 140, left: 15),
               child: Row(
                 children: [
-                  for(int i = 0; i<locationList.length; i++)
-                    if( i == _currentPage )
-                      SliderDot(true)
-                    else
-                      SliderDot(false)
+                  for (int i = 0; i < locationList.length; i++)
+                    if (i == _currentPage) SliderDot(true) else SliderDot(false)
                 ],
               ),
             ),
             TransformerPageView(
               scrollDirection: Axis.horizontal,
-              // transformer: ScaleAndFadeTransformer(
-
-              // ),
+              transformer: ScaleAndFadeTransformer(),
               viewportFraction: 0.8,
               onPageChanged: _onPageChanged,
               itemCount: locationList.length,
