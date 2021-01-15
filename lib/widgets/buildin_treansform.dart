@@ -1,10 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:transformer_page_view/transformer_page_view.dart';
-import '../widgets/single_weather.dart';
-import '../widgets/slider_dot.dart';
-import 'package:flutter/material.dart';
 import 'package:transformer_page_view/transformer_page_view.dart';
 import 'dart:math' as Math;
 
