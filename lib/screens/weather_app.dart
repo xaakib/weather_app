@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:transformer_page_view/transformer_page_view.dart';
 import 'package:weather_app/models/wather_locations.dart';
-
+import 'package:weather_app/widgets/buildin_treansform.dart';
+import '../widgets/single_weather.dart';
 import '../widgets/slider_dot.dart';
 
 class WeatherApp extends StatefulWidget {
@@ -88,7 +89,9 @@ class _WeatherAppState extends State<WeatherApp> {
             ),
             TransformerPageView(
               scrollDirection: Axis.horizontal,
-              transformer: ScaleAndFadeTransformer(),
+              // transformer: ScaleAndFadeTransformer(
+
+              // ),
               viewportFraction: 0.8,
               onPageChanged: _onPageChanged,
               itemCount: locationList.length,
@@ -100,4 +103,3 @@ class _WeatherAppState extends State<WeatherApp> {
     );
   }
 }
-© 2021 GitHub, Inc.
