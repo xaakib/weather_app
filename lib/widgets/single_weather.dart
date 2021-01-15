@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:weather_app/models/wather_locations.dart';
 class SingleWeather extends StatelessWidget {
   final int index;
   SingleWeather(this.index);
