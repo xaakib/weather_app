@@ -36,7 +36,9 @@ class _WeatherAppState extends State<WeatherApp> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text(''),
+        title: Text('WeatherApp',style: TextStyle(
+          fontSize: 25,fontWeight: FontWeight.bold,
+        ),),
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
